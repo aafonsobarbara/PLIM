@@ -1,0 +1,80 @@
+@import '_mixins';
+
+header {
+  background: linear-gradient(85.03deg, #183fa3 -4.4%, #60d4ff 100%);
+
+  .menu-container {
+    @include centralizar;
+
+    .menu-infos-top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 20px 0 10px 0;
+
+      .tel-container {
+        @include fonte-header();
+        padding-right: 100px;
+
+        p {
+          display: flex;
+          align-items: center;
+
+          img {
+            padding: 0 5px;
+          }
+        }
+      }
+
+      .redes-sociais-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100px;
+      }
+    }
+
+    .menu-principal-container {
+      display: flex;
+      justify-content: center;
+
+      .menu-principal {
+        display: flex;
+        justify-content: space-between;
+        width: $width;
+
+        .menu {
+          display: flex;
+          align-items: center;
+
+          ul {
+            display: flex;
+            align-items: center;
+
+            li a {
+              @include fonte-header();
+              padding: 0 20px;
+              text-align: center;
+            }
+
+            .button-off {
+              @include button-off();
+              padding: 7px 25px;
+              margin: 0 20px;
+            }
+
+            .button-orange {
+              @include button-orange();
+              padding: 7px 35px;
+              margin-left: 10px;
+
+              img {
+                padding: 0 7px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.planos {
+  background: linear-gradient(85.03deg, #183FA3 -4.4%, #60D4FF 100%);
+  padding: 140px 0;
+
+  .planos-content {
+    @include centralizar;
+
+    h2 {
+      @include titulo-medio;
+      margin-bottom: 15px;
+    }
+
+    p {
+      @include paragrafo-medio;
+      color: white;
+    }
+
+    .planos-itens-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 80px;
+
+      .planos-item {
+        background: #FFFFFF;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+        border-radius: 16px;
+        padding: 50px;
+        text-align: center;
+        margin-bottom: 20px;
+
+        p {
+          @include paragrafo;
+          margin-bottom: 10px;
+        }
+
+        svg {
+          margin: 10px 0;
+        }
+
+        h1 {
+          @include medium_prices;
+          margin: 20px 0 40px 0;
+
+          span {
+            font-weight: 400;
+          }
+        }
+
+        button {
+          @include button-orange;
+          padding: 10px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import '_header';
+@import '_reset';
+@import '_mixins';
+@import '_header-home';
+@import '_beneficios';
+@import '_planos';
+@import '_client-area';
+@import '_netflix';
+@import '_classes';
+
+body,
+button {
+  font-family: 'Poppins', sans-serif;
+}

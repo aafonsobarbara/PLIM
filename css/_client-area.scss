@@ -1,0 +1,44 @@
+.client-area {
+
+  .client-area-container {
+    @include centralizar;
+    display: flex;
+    align-items: center;
+
+    .client-area-text {
+      h2 {
+        @include titulo-medio;
+        color: $azul;
+        margin-bottom: 20px;
+      }
+
+      p {
+        @include paragrafo-medio;
+        color: $cinza-escuro;
+        margin-bottom: 50px;
+      }
+
+      span {
+        @include paragrafo;
+        font-size: 16px;
+      }
+
+      .client-area-botoes {
+        display: flex;
+
+        .button-off {
+          @include button-off;
+          border: 1px solid $azul;
+          color: $azul;
+          padding: 10px 40px;
+        }
+
+        .button-orange {
+          @include button-orange;
+          padding: 10px 40px;
+        }
+      }
+
+    }
+  }
+}
