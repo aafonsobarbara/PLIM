@@ -4,8 +4,19 @@
     @include centralizar;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+
+    img {
+      width: 40%;
+      position: relative;
+      top: 100px;
+    }
 
     .client-area-text {
+      width: 45%;
+
       h2 {
         @include titulo-medio;
         color: $azul;
@@ -16,26 +27,35 @@
         @include paragrafo-medio;
         color: $cinza-escuro;
         margin-bottom: 50px;
+        max-width: 450px;
       }
 
       span {
         @include paragrafo;
         font-size: 16px;
+        padding-left: 20px;
       }
 
       .client-area-botoes {
         display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+
 
         .button-off {
           @include button-off;
-          border: 1px solid $azul;
+          border: 2px solid $azul;
+          font-weight: bold;
           color: $azul;
-          padding: 10px 40px;
+          width: 265px;
         }
 
         .button-orange {
-          @include button-orange;
-          padding: 10px 40px;
+          width: 265px;
+
+          svg {
+            padding: 0 7px;
+          }
         }
       }
 

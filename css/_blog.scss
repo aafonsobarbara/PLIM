@@ -1,0 +1,62 @@
+.blog {
+    background: $degrade;
+    padding: 80px 0;
+    z-index: 1;
+
+    .blog-container {
+        @include centralizar;
+
+        .blog-header {
+            padding: 40px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .blog-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .blog-post {
+                background: white;
+                max-width: 370px;
+                box-sizing: border-box;
+                border-radius: 10px;
+                margin-bottom: 20px;
+
+                img {
+                    max-width: 100%;
+                }
+
+                .blog-post-text {
+                    padding: 0 40px 20px 40px;
+
+                    h5 {
+                        font-weight: bold;
+                        font-size: 16px;
+                        padding: 20px 0;
+                    }
+
+                    blockquote {
+                        font-weight: 600;
+                        font-size: 12px;
+                        color: $cinza-escuro;
+                        line-height: 18px;
+                        margin-bottom: 30px;
+                        text-align: left;
+
+                    }
+
+                    a {
+                        font-weight: 600;
+                        font-size: 12px;
+                        color: $laranja;
+                        text-align: left;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+        }
+    }
+}

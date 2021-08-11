@@ -1,0 +1,48 @@
+.fale-conosco {
+    background: #E5E5E5;
+    padding: 40px 0;
+
+    .fale-conosco-container {
+        @include centralizar;
+        display: flex;
+        align-items: center;
+
+
+
+        .fale-conosco-text {
+            h2 {
+                color: $azul;
+                margin-bottom: 20px;
+            }
+
+            p {
+                color: #757575;
+            }
+
+            .fale-conosco-blocks {
+                margin: 40px 0;
+            }
+
+            .fale-conosco-redes {
+                display: flex;
+                align-items: center;
+                max-width: 450px;
+                flex-wrap: wrap;
+
+                p {
+                    margin-right: 20px;
+                }
+
+                svg {
+                    padding: 0 20px;
+                }
+            }
+        }
+
+        img {
+            position: absolute;
+            right: 10%;
+            width: 30%;
+        }
+    }
+}

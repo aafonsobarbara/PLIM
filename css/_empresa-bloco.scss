@@ -1,0 +1,51 @@
+.empresa-bloco {
+    margin-bottom: 120px;
+
+    .empresa-container {
+        @include centralizar;
+        margin-top: 200px;
+
+        .bloco2 {
+            height: 20%;
+        }
+
+        .empresa-content-bloco {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            img {
+                width: 50%;
+                z-index: 20;
+            }
+
+            .empresa-bloco-text {
+                width: 600px;
+
+                h2 {
+                    color: $azul;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    margin: 30px 0 80px 0;
+                }
+
+                button {
+                    width: 329px;
+                    margin-top: 60px;
+                }
+
+                .titulo-2 {
+                    margin-top: 100px;
+                }
+
+            }
+
+            img:nth-child(2) {
+                position: relative;
+                top: 100px;
+            }
+        }
+    }
+}

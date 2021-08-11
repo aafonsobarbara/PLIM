@@ -1,3 +1,22 @@
 .netflix {
   background-image: url(/images/netflix.png);
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+
+  .netflix-container {
+    @include centralizar;
+    position: relative;
+
+    h2 {
+      @include titulos;
+      font-weight: bold;
+      margin-top: 150px;
+    }
+
+    img {
+      position: absolute;
+      top: 300px;
+    }
+  }
 }

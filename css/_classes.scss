@@ -19,3 +19,11 @@
 .button-off {
   @include button-off;
 }
+
+.titulo-40px {
+  @include titulos;
+}
+
+.p-20px {
+  @include paragrafo-medio;
+}

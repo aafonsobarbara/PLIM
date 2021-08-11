@@ -2,6 +2,7 @@ $width: 1440px;
 $azul: #0099DC;
 $amarelo:#f5e433;
 $cinza-escuro: #939191;
+$laranja: #E88100;
 $degrade:linear-gradient(85.03deg, #183FA3 -4.4%, #60D4FF 100%);
 
 @mixin centralizar {
@@ -22,6 +23,7 @@ $degrade:linear-gradient(85.03deg, #183FA3 -4.4%, #60D4FF 100%);
   font-size: 40px;
   color: white;
   font-weight: 500;
+  font-weight: bold;
 }
 
 @mixin big_prices () {
@@ -46,6 +48,7 @@ $degrade:linear-gradient(85.03deg, #183FA3 -4.4%, #60D4FF 100%);
   font-weight: 500;
   font-size: 20px;
   line-height: 112%;
+  color: $cinza-escuro;
 }
 
 @mixin titulo-medio {
@@ -82,7 +85,7 @@ $degrade:linear-gradient(85.03deg, #183FA3 -4.4%, #60D4FF 100%);
   border-radius: 5px;
   background-color: #e88100;
   padding: 10px 40px;
-  max-width: 216px;
+  max-width: 100%;
   cursor: pointer;
 }
 
