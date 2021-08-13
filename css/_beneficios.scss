@@ -57,3 +57,50 @@
     }
   }
 }
+
+@media screen and (max-width: 992px) {
+  .beneficios{
+    margin-bottom: 80px;
+  }
+  .beneficios-content {
+    text-align: center;
+
+    .beneficios-blocos {
+      flex-wrap: wrap;
+
+      img {
+        margin: 0 auto;
+      }
+
+      .beneficios-text {
+        margin-left: 0;
+
+        img {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .cards-beneficios {
+
+    justify-content: center !important;
+    left: 0;
+    bottom: -20%;
+
+    .card-beneficio {
+      padding: 15px !important;
+      margin: 0 10px !important;
+      margin-bottom: 20px;
+      
+      h5{
+        font-size: 18px !important;
+      }
+      p{
+        font-size: 12px !important;
+        margin-top: 20px;
+      }
+    }
+  }
+
+}

@@ -3,7 +3,9 @@
   background-size: cover;
   background-position: center;
   height: 550px;
-
+@include mobile{
+  background-position: right;
+}
   .netflix-container {
     @include centralizar;
     position: relative;
@@ -12,11 +14,22 @@
       @include titulos;
       font-weight: bold;
       margin-top: 150px;
+      @include tablet{
+        margin-top: 85px;
+        font-size: 35px;
+      }
     }
 
     img {
       position: absolute;
       top: 300px;
+      @include tablet{
+        top: 370px;
+        width: 50%;
+      }
+      @include mobile{
+        width: 100%;
+      }
     }
   }
 }

@@ -1,24 +1,30 @@
 @import 'header';
 @import '_classes';
 
-.header-content {
+
+.header-content{
+  position: relative;
+  @include centralizar;
+  padding-bottom: 60px;
+  margin-bottom: 100px;
+.header-content-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  @include centralizar;
-
   position: relative;
 
   .header-content-text {
     @include titulos;
-
+    font-weight: normal;
     max-width: 700px;
 
     .header-content-text-plans {
       display: flex;
       margin-top: 50px;
       flex-wrap: wrap;
+      width: 100%;
+      justify-content: space-between;
+  
 
       .header-plan1 {
         display: flex;
@@ -97,11 +103,7 @@
     }
 
     .button-orange {
-      width: 100%;
-      max-width: 340px;
-      justify-content: center;
-      font-size: 14px;
-      padding: 15px;
+      width: 340px;
       @include button-orange;
 
       b {
@@ -111,9 +113,16 @@
   }
 
   .header-content-img {
+    position: relative;
+max-width: 50%;
     img {
-      width: 100%;
-      max-width: 100%;
+      position: relative;
+left: 8%;
+top: 8%;
+max-width: 900px;
+width: 100%;
     }
   }
+}
+
 }

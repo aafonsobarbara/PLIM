@@ -51,10 +51,19 @@ header {
             display: flex;
             align-items: center;
 
-            li a {
-              @include fonte-header();
+            li {
               padding: 0 20px;
-              text-align: center;
+
+              a {
+                @include fonte-header();
+
+                text-align: center;
+
+                &:hover {
+                  border-bottom: 2px solid $laranja;
+
+                }
+              }
             }
 
             .button-off {

@@ -10,6 +10,7 @@
 @import '_empresa-bloco';
 @import '_blog';
 @import '_fale-conosco';
+@import '_footer';
 
 body,
 button {
@@ -18,4 +19,8 @@ button {
 
 body {
   background: #F1F1F1;
+}
+*::selection {
+ background-color: $laranja;
+ color: white;
 }

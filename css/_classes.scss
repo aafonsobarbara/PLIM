@@ -27,3 +27,7 @@
 .p-20px {
   @include paragrafo-medio;
 }
+
+.client-area-botoes {
+  @include client-area-botoes;
+}
