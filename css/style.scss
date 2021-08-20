@@ -11,9 +11,15 @@
 @import '_blog';
 @import '_fale-conosco';
 @import '_footer';
+@import '_quem_somos';
+@import '_empresa';
+@import '_planos_pag';
+@import '_contato';
+@import '_cobertura';
+
 
 body,
-button {
+button,input, textarea {
   font-family: 'Poppins', sans-serif;
 }
 

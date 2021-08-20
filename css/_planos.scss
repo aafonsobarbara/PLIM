@@ -16,9 +16,7 @@
     }
 
     .planos-itens-container {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      @include space-between;
       margin-top: 80px;
 
       .planos-item {
@@ -27,7 +25,7 @@
         border-radius: 16px;
         padding: 50px;
         text-align: center;
-        margin-bottom: 20px;
+        margin: 20px 10px;
 
         p {
           @include paragrafo;
@@ -56,3 +54,5 @@
     }
   }
 }
+
+

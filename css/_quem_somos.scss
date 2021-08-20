@@ -1,0 +1,108 @@
+.quem-somos-content {
+    @include centralizar;
+    @include space-between;
+
+    padding: 50px 0 80px 0;
+    align-items: initial;
+
+    @include desktop {
+        padding-bottom: 10px;
+    }
+
+    .quem-somos-text {
+        max-width: 55%;
+        min-width: 500px;
+
+        @include tablet {
+            max-width: 90%;
+            min-width: 90%;
+        }
+
+        .titulo-40px {
+            color: $amarelo;
+            margin-bottom: 20px;
+        }
+
+        .paragrafo {
+            color: white;
+            line-height: 132.5%;
+            font-size: 14px;
+
+        }
+    }
+
+    .quem-somos-img {
+        position: relative;
+        max-width: 45%;
+
+        img {
+            position: absolute;
+            right: -50px;
+            top: -100px;
+            max-width: 700px;
+
+            @include desktop {
+                width: 100%;
+                position: relative;
+                top: 0;
+                right: 0;
+            }
+
+        }
+    }
+}
+
+.diferenciais {
+    @include centralizar;
+
+    h2 {
+        color: $azul;
+        text-align: center;
+    }
+
+    .diferenciais-blocks {
+        @include space-between;
+        margin-top: 60px;
+
+        .diferenciais-block {
+            text-align: center;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            padding: 40px;
+            width: 200px;
+            max-height: 150px;
+            margin: 10px;
+        }
+    }
+
+    .diferenciais-container {
+        @include space-between;
+        margin-top: 100px;
+
+        .diferenciais-content {
+            max-width: 380px;
+            margin: 10px;
+            color: $cinza-escuro;
+
+            img {
+                width: 100%;
+            }
+
+            p {
+                margin-top: 60px;
+            }
+        }
+    }
+}
+
+@media (max-width:600px) {
+    .quem_somos_pag {
+
+        .header-all {
+            height: 100% !important;
+        }
+
+    }
+
+}

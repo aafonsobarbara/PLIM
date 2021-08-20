@@ -1,0 +1,72 @@
+.cobertura_pag {
+    .header-all {
+        height: 450px;
+
+        .localidades {
+            .localidades-container {
+                @include centralizar;
+
+                .localidades-content {
+
+                    width: 100%;
+                    @include space-between;
+
+                    .localidades-text {
+                        max-width: 50%;
+                        margin-bottom: 100px;
+
+                        .p-20px {
+                            color: white;
+                            padding-top: 15px;
+                        }
+                    }
+
+                    img {
+                        width: 40%;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.cobertura {
+    @include centralizar;
+    padding: 50px 10px;
+    .titulo-40px {
+        color: $azul;
+        display: block;
+        width: 100%;
+    }
+    .cobertura-container {
+        display: flex;
+        justify-content: space-between;
+        .areas-cobertura{
+            .p-20px{
+                font-weight: bold;
+                margin-top: 50px;
+            }
+          width: 40%;
+           .areas-cobertura-list{
+               display: flex;
+               ul{
+                   padding-right: 20px;
+                   font-size: 14px;
+                   p{
+                       color: $laranja;
+                       font-weight: bold;
+                       padding: 15px 0;
+                   }
+                   li{
+                       color: $cinza-escuro;
+                       line-height: 127%;
+                   }
+               }
+               @include mobile{
+                   flex-wrap: wrap;
+               }
+           }
+        }
+    }
+}

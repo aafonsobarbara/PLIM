@@ -1,128 +1,189 @@
 @import 'header';
 @import '_classes';
 
-
-.header-content{
-  position: relative;
-  @include centralizar;
-  padding-bottom: 60px;
-  margin-bottom: 100px;
-.header-content-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-
-  .header-content-text {
-    @include titulos;
-    font-weight: normal;
-    max-width: 700px;
-
-    .header-content-text-plans {
-      display: flex;
-      margin-top: 50px;
-      flex-wrap: wrap;
-      width: 100%;
-      justify-content: space-between;
-  
-
-      .header-plan1 {
-        display: flex;
-
-        h1 {
-          @include big_prices();
-        }
-
-        p {
-          @include plans-info-header-home();
-        }
-      }
-
-      .header-plan2 {
-        position: relative;
-        margin-left: 30px;
-
-        p:first-child {
-          font-weight: 300;
-          font-size: 20px;
-          text-align: left;
-          position: inherit;
-          padding-bottom: 10px;
-        }
-
-        .fine {
-          font-weight: 300;
-          font-size: 20px;
-          text-align: end;
-          padding-right: 80px;
-          position: absolute;
-          bottom: 70px;
-          right: -95px;
-        }
-
-        h1 {
-          @include big_prices;
-          display: flex;
-
-          span {
-            font-weight: 300;
-            font-size: 50px;
-          }
-
-        }
-      }
-    }
-
-    .header-plan-more {
-      margin-bottom: 40px;
-
-      h1 {
-        @include big_prices();
-        font-size: 40px;
-        font-weight: 600;
-        display: flex;
-        align-items: flex-end;
-        position: relative;
-        max-width: 340px;
-
-        img {
-          position: absolute;
-          right: 0;
-          top: -15px;
-        }
-      }
-
-      p {
-        @include plans-info-header-home();
-        font-size: 20px;
-
-        span {
-          font-size: 16px;
-        }
-      }
-    }
-
-    .button-orange {
-      width: 340px;
-      @include button-orange;
-
-      b {
-        padding: 0 3px;
-      }
-    }
+.header-home-pag {
+  max-height: 650px;
+  @include tablet{
+    margin-bottom: 30px;
   }
-
-  .header-content-img {
-    position: relative;
-max-width: 50%;
-    img {
-      position: relative;
-left: 8%;
-top: 8%;
-max-width: 900px;
-width: 100%;
+  .header-all {
+    @include tablet {
+      height: 700px;
     }
-  }
+}
 }
 
+.header-container {
+  .header-content {
+    position: relative;
+    @include centralizar;
+
+    .header-content-top {
+      @include space-between;
+      position: absolute;
+      width: 100%;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+      overflow: hidden;
+      .header-content-text {
+
+        font-weight: normal;
+        max-width: 700px;
+       margin-top: 40px;
+        h2 {
+          @include titulos;
+
+          @include tablet {
+            font-size: 30px;
+            text-align: center;
+          }
+        }
+
+        .header-content-text-plans {
+          display: flex;
+          margin-top: 50px;
+
+          width: 100%;
+          justify-content: space-between;
+
+          @include tablet {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 10px;
+          }
+
+          .header-content-text-plans-left {
+            @include tablet {
+              width: 100%;
+            }
+
+            .header-plan1 {
+              display: flex;
+
+              @include tablet {
+                justify-content: center
+              }
+
+              h1 {
+                @include big_prices();
+              }
+
+              p {
+                @include plans-info-header-home();
+              }
+            }
+          }
+
+          .header-plan2 {
+            position: relative;
+            margin-left: 30px;
+            color: white;
+
+            @include tablet {
+              margin-left: 0;
+              width: 100%;
+              flex-wrap: wrap;
+              justify-content: center;
+              margin-top: 10px;
+              display: flex;
+            }
+
+            p:first-child {
+              font-weight: 300;
+              font-size: 20px;
+              text-align: left;
+              position: inherit;
+              padding-bottom: 10px;
+            }
+
+            .fine {
+              font-weight: 300;
+              font-size: 20px;
+              text-align: end;
+              padding-right: 80px;
+              position: absolute;
+              bottom: 40%;
+              right: -95px;
+
+              @include tablet {
+                bottom: 20%;
+                right: 50%;
+              }
+            }
+
+            h1 {
+              @include big_prices;
+              display: flex;
+
+              span {
+                font-weight: 300;
+                font-size: 50px;
+              }
+
+            }
+          }
+
+
+          .header-plan-more {
+            margin-bottom: 40px;
+
+            @include tablet {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            }
+
+            h1 {
+              @include big_prices();
+              font-size: 40px;
+              font-weight: 600;
+              display: flex;
+              align-items: flex-end;
+              position: relative;
+              max-width: 340px;
+
+              img {
+                position: absolute;
+                right: 0;
+                top: -15px;
+              }
+
+              @include tablet {
+                width: 100%;
+              }
+            }
+
+            p {
+              @include plans-info-header-home();
+              font-size: 20px;
+
+              span {
+                font-size: 16px;
+              }
+            }
+          }
+
+          
+        }
+      }
+
+      .header-content-img {
+        position: relative;
+        max-width: 50%;
+        
+        @include tablet {
+          display: none;
+        }
+
+        img {
+          position: relative;
+          left: 2%;
+          top: 30px;
+          max-width: 900px;
+          width: 100%;
+        }
+      }
+    }
+
+  }
 }

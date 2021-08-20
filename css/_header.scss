@@ -1,84 +1,155 @@
 @import '_mixins';
 
 header {
-  background: linear-gradient(85.03deg, #183fa3 -4.4%, #60d4ff 100%);
+  height: 100%;
 
-  .menu-container {
-    @include centralizar;
+  .header-all {
 
-    .menu-infos-top {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-      align-items: center;
-      padding: 20px 0 10px 0;
 
-      .tel-container {
-        @include fonte-header();
-        padding-right: 100px;
+    background: linear-gradient(85.03deg, #183fa3 -4.4%, #60d4ff 100%);
+    height: 600px;
 
-        p {
-          display: flex;
-          align-items: center;
+    .menu-container {
+      @include centralizar;
 
-          img {
-            padding: 0 5px;
-          }
-        }
-      }
-
-      .redes-sociais-container {
+      .menu-infos-top {
         display: flex;
-        justify-content: space-between;
-        width: 100px;
-      }
-    }
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 20px 0 10px 0;
 
-    .menu-principal-container {
-      display: flex;
-      justify-content: center;
+        .tel-container {
+          @include fonte-header();
+          padding-right: 100px;
 
-      .menu-principal {
-        display: flex;
-        justify-content: space-between;
-        width: $width;
-
-        .menu {
-          display: flex;
-          align-items: center;
-
-          ul {
+          p {
             display: flex;
             align-items: center;
 
-            li {
-              padding: 0 20px;
+            img {
+              padding: 0 5px;
+            }
+          }
+        }
 
-              a {
-                @include fonte-header();
+        .redes-sociais-container {
+          display: flex;
+          justify-content: space-between;
+          width: 100px;
+        }
+      }
 
-                text-align: center;
+      .menu-principal-container {
+        display: flex;
+        justify-content: center;
 
-                &:hover {
-                  border-bottom: 2px solid $laranja;
+        .menu-principal {
+          display: flex;
+          justify-content: space-between;
+          width: $width;
+          align-items: center;
 
+          @media (max-width:1130px) {
+            flex-direction: column;
+          }
+
+          @include tablet {
+            flex-direction: row;
+          }
+
+          .logo {
+            @include mobile {
+              width: 40%;
+            }
+          }
+
+          .menu {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: flex-end;
+            
+            @include tablet {
+              flex-direction: column;
+              position: relative;
+              width: auto;
+            }
+
+            .menu-links {
+              display: flex;
+              align-items: center;
+              width: 100%;
+              justify-content: flex-end;
+
+              @media (max-width:1130px) {
+                flex-wrap: wrap;
+                justify-content: center;
+              }
+
+              @include tablet {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                right: 10%;
+                padding: 10px;
+                top: 100%;
+                background-color: $azul;
+                width: 200px;
+                z-index: 1000;
+              }
+
+              li {
+                padding: 0 20px;
+
+                @include tablet {
+                  padding: 10px 0;
+                }
+
+                a {
+                  @include fonte-header();
+
+                  text-align: center;
+
+                  &:hover {
+                    border-bottom: 2px solid $laranja;
+
+                  }
+                }
+              }
+
+              .button-off {
+                @include button-off();
+                padding: 7px 25px;
+                margin: 0 20px;
+              }
+
+              .button-orange {
+                @include button-orange();
+                padding: 7px 35px;
+                margin-left: 10px;
+                max-width: 210px;
+
+                img {
+                  padding: 0 7px;
+                }
+
+                @include tablet {
+                  padding: 10px;
+                  margin: 10px 0;
                 }
               }
             }
 
-            .button-off {
-              @include button-off();
-              padding: 7px 25px;
-              margin: 0 20px;
-            }
+            .hamburguer {
+              display: none;
+              font-size: 20px;
+              color: white;
+              padding: 10px;
+              background: $azul;
 
-            .button-orange {
-              @include button-orange();
-              padding: 7px 35px;
-              margin-left: 10px;
-
-              img {
-                padding: 0 7px;
+              @include tablet {
+                display: block;
               }
             }
           }

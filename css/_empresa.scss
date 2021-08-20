@@ -1,0 +1,29 @@
+.empresa_pagina{
+    margin-bottom: 260px;
+    .empresa-container{
+        margin-top: 0;
+        .bloco2{
+            height: auto;
+            h2{
+                color: $azul !important;
+            }
+        }
+        .empresa-content-bloco{
+            img:nth-child(2) {
+               
+                top:0px;
+            }
+            .empresa-bloco-text{
+               h2, p{
+                   color: white;
+               }
+               
+            }
+            
+        }
+    }
+    .beneficios-text{
+        max-width: 60%;
+        width: 100%;
+    }
+}

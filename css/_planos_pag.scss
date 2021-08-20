@@ -1,0 +1,44 @@
+.planos_pagina {
+    header {
+        .planos {
+            padding: 50px 0;
+
+            .planos-content {
+                position: relative;
+                padding: 0 !important;
+
+                .planos-container {
+                    position: absolute;
+                    width: 100%;
+                    padding: 10px;
+                    box-sizing: border-box;
+
+                    .planos-item {
+                        ul li {
+                            display: flex;
+                            align-items: center;
+                            
+                            color: $cinza-escuro;
+                            padding: 10px 0;
+                            border-bottom: 2px solid #F9F9F9;
+                            svg{
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .empresa-bloco {
+        .empresa-container {
+            margin-bottom: 250px;
+            margin-top: 40px;
+        }
+
+    }
+
+
+}
+

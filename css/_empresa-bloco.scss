@@ -1,12 +1,24 @@
 .empresa-bloco {
     margin-bottom: 120px;
 
+    @include tablet {
+        margin-bottom: 0px !important;
+    }
+
     .empresa-container {
         @include centralizar;
         margin-top: 200px;
 
+        @include tablet {
+            margin-bottom: 0px !important;
+        }
+
         .bloco2 {
             height: 20%;
+
+            @include tablet {
+                height: auto;
+            }
         }
 
         .empresa-content-bloco {
@@ -34,6 +46,10 @@
                 button {
                     width: 329px;
                     margin-top: 60px;
+
+                    @include tablet {
+                        margin: 0 auto;
+                    }
                 }
 
                 .titulo-2 {
@@ -45,6 +61,16 @@
             img:nth-child(2) {
                 position: relative;
                 top: 100px;
+
+                @include tablet {
+                    top: 0px;
+                }
+            }
+
+            @include tablet {
+                flex-wrap: wrap;
+                justify-content: center;
+                text-align: center;
             }
         }
     }
